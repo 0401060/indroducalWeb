@@ -10,14 +10,13 @@ body{
 .topo{
 	background-color: lightblue;
 	padding: 30px;
-	width: 100%;
-	float: left;
+	width: 100%; 
 	text-align: center;
 }
 nav{
-	float: left;
-	width: 30%;
-	height: 300px;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 	background: #ccc;
 	padding: 20px;
 }	
@@ -27,18 +26,22 @@ nav ul{
 	font-size: 1.5em;
 }
 
+nev a{
+	text-decoration: none;
+}
+
 article{
-	 float: left;
+	 -webkit-flex: 3;
+	 -ms-flex: 3;
+	 flex: 3;
 	 padding: 20px;
-	 width: 70%;
 	 background: #f1f1f1;
 	 height: 300px;
 }
 
 section{ 
-    content: "";
-	display: table;
-	clear: both;
+     Display: -webkit-flex;
+	 Display: flex;
 }
 
 footer{ 
@@ -47,11 +50,12 @@ footer{
 	 text-align: center;
 }
 @media (max-width: 600px){
-	nav, article{
-		width: 100%;
-		height: auto;
+	section{
+		 -webkit-flex-direction: column;
+		 flex-direction: column;
 	}
 }
+
 
 
 
